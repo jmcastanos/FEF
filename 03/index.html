@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS ejemplo - Mi CV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="js/app.js"></script>
+
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            padding: 3rem;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        #avatar img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            
+
+        }
+        /*#avatar {
+            border:1px solid;
+        }*/
+
+        #acercademi{
+            background-color: white;
+            padding: 16px 2rem;
+            margin-top: 2rem;
+        }
+        .bold{
+            font-weight: 600;
+            padding:1rem 0;
+        }
+        ul{
+            padding-left: 0;
+        }
+        li{
+            list-style:none;
+        }
+        footer{
+            border-top:1px solid #ccc;
+        }
+        .icon-social{
+            
+            display: inline-block;
+            margin: 2rem 10px 0 10px;
+        }
+        .icon-social svg{
+            width: 30px;
+            height: 30px;
+        }
+
+a{
+    text-decoration: none;
+    color: #000;
+    
+}
+a:hover{
+    color: #f00;
+}
+a.boton2{
+    color:red;
+
+    background-color: blue;
+}
+a.boton2:hover{
+    color:green;
+    background-color: yellow;
+}
+.nombreRojo{
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.edadAzul{ 
+    color: blue;
+    font-size: 1.5rem;
+ }
+ 
+ 
+
+ /* Hacer que H2 y H3 sean del mismo tamano */
+ h1,h2,h3{
+     font-size: 2rem;
+     color: #999;
+ }
+
+
+.leyemdaAzul {
+    color: green;
+}
+header > p {
+    font-size:2.5rem;
+}
+#leyendaAzul{
+    font-weight: bold;
+}
+
+#acercademi > h2{
+    color: green;
+}
+
+header > p  span {
+    color: blue;
+}
+#leyendaAzul span{
+    color: red;
+    font-weight: bold;
+}
+
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Perfil</h1>
+        <p id="leyendaAzul" class="leyemdaAzul">Soy un desarrollador  <span> web <span>PHP</span> </span> creativo</p>
+    </header>
+    <div id="avatar">
+        <img src="images/mifoto.jpg" alt="Mi foto">
+    </div>
+    <section id="acercademi">
+        <h2>Acerca de mi</h2>
+        <p>I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. Vitae sapien pellentesque habitant morbi tristique senectus et. Aenean sed adipiscing diam donec adipiscing tristique risus. </p>
+        <h2>Yo tamb soy verdfe</h2>
+    </section>
+
+    <section>
+        <h3>Detalles</h3>
+        <ul>
+            <li class="bold">Nombre:</li>
+            <li class="nombreRojo" >Hunter Norton </li>
+            <li class="bold">Edad:</li>
+            <li class="edadAzul">33 anios</li>
+            <li class="bold">Ubicacion:</li>
+            <li>San Francisco, CA</li>
+        </ul>
+    </section>
+
+    <footer>
+
+        <a class="boton2" href="xxx">Admin</a>
+        <a href="xxxxxxx">Ayuda</a>
+
+        <div class="icon-social fb">
+            <a href="https://www.facebook.com">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path>
+            </svg>
+        </a>
+        </div>
+        <div class="icon-social tw">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                <path d="M 2.8671875 3 L 9.7363281 12.818359 L 2.734375 21 L 5.3808594 21 L 10.919922 14.509766 L 15.460938 21 L 21.371094 21 L 14.173828 10.697266 L 20.744141 3 L 18.138672 3 L 12.996094 9.0097656 L 8.7988281 3 L 2.8671875 3 z"></path>
+                </svg>
+        </div>
+    </footer>
+
+</body>
+</html>
