@@ -1,0 +1,41 @@
+#container{
+    display: grid;
+    
+    grid-template-areas: 
+        "kbza kbza kbza"
+        "menu contenido aside"
+        "footer footer footer";
+}
+
+header{
+    grid-area: kbza;
+    background-color: lightblue;
+}
+
+nav{
+    grid-area: menu;
+    background-color: lightgreen;
+}
+
+main{
+    grid-area: contenido;
+    background-color: lightcoral;
+}
+
+aside{
+    grid-area: aside;
+    background-color: lightgray;
+}
+
+footer{
+    grid-area: footer;
+    background-color: lightpink;
+    padding: 10px;
+}
+
+
+#social-icons{
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+}
