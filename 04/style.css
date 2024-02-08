@@ -30,8 +30,8 @@ nav{
 
 nav ul{
     display: flex;
-    /*flex-direction: column;
-    padding:0;*/
+    /*flex-direction: column;*/
+    padding:0;
 
 }
 nav li{
