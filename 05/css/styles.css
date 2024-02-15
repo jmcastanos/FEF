@@ -4,8 +4,15 @@ body,h1,h2,ul{
     padding: 0;
 }
 
+.hidden{
+    display: none;
+}
+
 main{
     display: flex;
+  margin: 40px;
+  box-shadow: 3px 1px 8px 0px #666;
+  border: 1px solid #777;
 }
 
 aside{
@@ -56,5 +63,69 @@ aside li a:hover{
 }
 
 #principal h1{
-    margin-top: 4rem;
+    font-size: 3rem;
+  width: 200px;
+  margin-bottom: 12px;
+}
+#principal h2{
+    color: #aaa;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+}
+#principal button{
+    border: 1px solid #333;
+  background-color: white;
+  padding: 7px 20px;
+  margin-top: 1rem;
+}
+
+#hammenu{
+    display: none;
+}
+
+.mostrarMenuFlotante{
+    display: block;
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  border: 1px solid #333;
+  box-shadow: 1px 5px 6px 3px rgb(0,0,0);
+}
+
+@media screen and (min-width: 1100px){
+    #principal{
+      background-image: url(/05/images/mifotogrande.jpg);
+      background-size: 303px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    
+}
+
+@media all and (max-width: 1100px){
+    #fotogrande{
+        margin-top: 2rem;
+        display: block;
+        width: 100%;
+        max-width: 150px;
+        box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.9);
+    }
+}
+
+@media all and (max-width: 600px){
+    aside{
+        display: none;
+    }
+    #hammenu{
+        cursor: pointer;
+        display: inline;
+        z-index: 2;
+
+    }	
+    #hammenu svg{
+        width: 30px;
+        height: 30px;
+    }	
 }
