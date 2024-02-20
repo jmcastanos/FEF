@@ -1,0 +1,34 @@
+body{
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar-brand {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  #splash{
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+    padding-top:15%;
+    padding-bottom: 8%;
+
+    /*
+    background-image: url(https://media.istockphoto.com/id/1074115128/es/foto/agua-splash.jpg?s=612x612&w=0&k=20&c=0l0_4W40-l8dK91CZmMxq8mGwQiJD34_A4zz81UGC0Y=);
+    background-position: center;
+    background-size: cover;
+    */
+    
+  }
+
+  #splash h1{
+    font-size: 3rem;
+    text-shadow: 0px 4px 3px rgba(255,255,255,0.5)
+  }
+
+
+  
